@@ -19,6 +19,7 @@ public class DynamoDbUser : IdentityUser
     private set { }
   }
   public new DateTime? LockoutEnd { get; set; }
+  public string? ProfilePictureUrl { get; set; }
   [DynamoDBIgnore]
   public Dictionary<string, List<string>> Claims { get; set; } = new();
   [DynamoDBIgnore]
